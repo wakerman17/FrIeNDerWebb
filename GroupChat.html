@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+    <title>Group Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="./static/js/main.js"></script>
+    <!--
+        <link rel="stylesheet" href="./static/css/main.css" />
+    -->
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <ul data-role="listview" data-ajax="true" data-inset="true" data-theme="a">
+                <li data-role="content">Mobile apps creation group</li>
+                <li data-role="list-divider">A group for people who want to share their ideas or find someone to create an awesome app with</li>
+                <li id="following">Following: 71</li>
+                <li data-role="list-divider">Available events</li>
+                <li><a href="EventChat.html" rel="external">14.02 App hackathon (2/4)</a></li>
+            </ul>
+        </div><!-- /header -->
+        
+        <div role="main" class="ui-content">
+            <div id="chat" class="ui-content">
+                <div class="ui-body ui-body-a ui-corner-all">
+                    <p>Thor:</p>
+                    <p>So I was thinking about creating an app that crashes when you open it</p>        
+                </div>
+                <p></p>
+                <div class="ui-body ui-body-a ui-corner-all">
+                    <p>Iron man:</p>
+                    <p>That is an awesome idea, we should create an event for that!</p>        
+                </div>
+                <p></p>
+                <div class="ui-body ui-body-a ui-corner-all">
+                    <p>Spider-man:</p>
+                    <p>Mr Stark? I don't feel so good!</p>        
+                </div>
+                <p></p>
+            </div>
+        </div><!-- /content -->
+ 
+
+        <div data-role="footer">    
+            <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-star ui-btn-b" onclick="addFollowing(this)">Follow</a>
+                <a href="CreateEvent.html" rel="external" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-plus ui-btn-b">Create event</a>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="text" id="userInput" name="userInput" />
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-plus ui-btn-b" onclick="addToChat()">Submit</a>
+                </div>
+            </div>
+            
+        
+        </div><!-- /footer -->
+    </div><!-- /page -->
+</body>
+</html>

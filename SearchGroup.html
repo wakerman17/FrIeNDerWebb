@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+    <title>FrIeNDr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link 	rel = "stylesheet"
+            type = "text/css"
+            href = "main.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+<body >
+    <div data-role="page">
+ 
+        <div data-role="header">
+            <h1>Find A New Group</h1>
+        </div><!-- /header -->
+		
+		
+		
+		<div style="background-color:#fffff9;">
+		<label for="search-basic">Search group name:</label>
+		<input type="search" name="search" id="search-basic" value="mobile" />
+			<div data-role="collapsible">
+				<h2>Filter</h2>
+				<label for="select-choice-0" class="select">Interest:</label>
+				<select name="select-choice-0" id="select-choice-0">
+					<option value="Mobile">Mobile</option>
+					<option value="Soccer">Soccer</option>
+				</select>
+				<label for="slider-1">Max amount of members:</label>
+				<input type="range" name="slider-1" id="slider-1" value="20" min="0" max="100" />
+				<br>
+				<label for="slider-1">Min amount of members:</label>
+				<input type="range" name="slider-1" id="slider-1" value="10" min="0" max="100" />
+				<a href="SearchGroup.html" rel="external" data-role="button">Filter</a>
+			</div>
+		</div>
+		
+        <div role="main" class="ui-content">
+			<div style="background-color:#fffff9;">
+				<h2>New groups</h2>
+				<h3>Mobile gaming group</h3>
+				<div data-role="collapsible">
+					<h3>More info</h3>
+					<p>A group with people that like mobile gaming</p>
+					<a href="GameGroup.html" rel="external" data-role="button">Join</a>
+				</div>
+				<h3>Mobile photographing group</h3>
+				<div data-role="collapsible">
+					<h3>More info</h3>
+					<p>A group with people that like to photograph with mobiles</p>
+					<a href="SearchGroup.html" rel="external" data-role="button">Join</a>
+				</div>
+			</div>
+			<a href="CreateNewGroup.html" rel="external" data-role="button" >Create A New Group</a>
+        </div><!-- /content -->
+ 
+    </div><!-- /page -->
+</body>
+</html>

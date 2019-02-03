@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <title>Event Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="./static/js/main.js"></script>
+    <!--
+        <link rel="stylesheet" href="./static/css/main.css" />
+    -->
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <ul data-role="listview" data-ajax="false" data-inset="true" data-theme="a">
+                <li data-role="list-divider">Mobile chat app hackathon</li>
+                <li>When: 14. february</li>
+                <li id="interested">Interested: 15</li>
+                <li id="attending">Attending: 2/4</li>
+            </ul>
+        </div><!-- /header -->
+        
+        <div role="main" class="ui-content">
+            <div id="chat" class="ui-content">
+                <div class="ui-body ui-body-a ui-corner-all">
+                    <p>Thor:</p>
+                    <p>Anyone wants to create a cool mobile app where people can meet and stuff?</p>        
+                </div>
+                <p></p>
+                <div class="ui-body ui-body-a ui-corner-all">
+                    <p>Spider-man:</p>
+                    <p>Mr Stark? I don't feel so good!</p>        
+                </div>
+                <p></p>
+            </div>
+        </div><!-- /content -->
+ 
+
+        <div data-role="footer">    
+            <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-star ui-btn-b" onclick="addInterested(this)">Interested</a>
+                <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-plus ui-btn-b" onclick="addAttending(this)">Attending</a>
+            </div>
+
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="text" id="userInput" name="userInput" />
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-plus ui-btn-b" onclick="addToChat()">Submit</a>
+                </div>
+            </div>
+            
+            
+        
+        </div><!-- /footer -->
+    </div><!-- /page -->
+</body>
+</html>
